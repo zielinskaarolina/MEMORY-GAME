@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(253, 216, 222);
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    flex-direction: column;
+    font-family: 'Unbounded', cursive;
+}
+
+.grid {
+	width: 400px;
+	height: 300px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	-webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+	-moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+	box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+	gap: 5px;
+	padding: 5px;
+}
+
+.grid.level1{
+	width: 500px;
+	height: 400px;
+	grid-template-columns: repeat(5, 1fr);
+}
+
+.grid.level2{
+	width: 600px;
+	height: 500px;
+	grid-template-columns: repeat(6, 1fr);
+}
+
+.card {
+	background-image: url('./images/backImage.png');
+	cursor: pointer;
+
+}
+
+.title , .result , .resultTime{
+    padding: 2rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: rgb(243, 121, 141);
+    font-weight: 700;
+	text-shadow: 4px 3px 5px rgb(255, 255, 255);
+	text-align: center;
+}
+
+.title{
+	word-spacing: 1rem;
+}
+
+.resultTime{
+	padding-top: 0;
+	font-size: 1rem;
+}
